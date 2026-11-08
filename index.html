@@ -1,0 +1,595 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>For My Bigboy</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="background-glow glow-one"></div>
+    <div class="background-glow glow-two"></div>
+    <div class="stars" id="stars"></div>
+
+    <!-- NAVIGATION -->
+    <header class="navbar">
+        <a href="#home" class="logo">Made<span>For</span>Bastien</a>
+
+        <button class="menu-toggle" id="menuToggle" aria-label="Open navigation">
+            ☰
+        </button>
+
+        <nav id="navLinks">
+            <a href="#trust" class="nav-link">Trust Tester</a>
+            <a href="#phrases" class="nav-link">Filipino Kit</a>
+            <a href="#challenge" class="nav-link">Challenge</a>
+            <a href="#messages" class="nav-link">Messages</a>
+            <a href="#jay" class="nav-link">About Ja</a>
+            <a href="#sleep" class="nav-link">Sleep Detector</a>
+        </nav>
+    </header>
+
+    <main>
+
+        <!-- HOME -->
+        <section class="hero-section page-section" id="home">
+            <div class="hero-content">
+                <p class="eyebrow">
+                    <span class="status-dot"></span>
+                    PERSONAL FILE 
+                </p>
+
+                <h1>For my<br><span class="yellow">bigboy, Sev.</span></h1>
+
+                <p class="hero-subtitle">
+                    A little something from your <span class="lavender">Ja.</span> ♡
+                </p>
+
+                <div class="terminal-box">
+                    <p><span class="prompt">guest@sevi:~$</span> open personal_file.exe</p>
+                    <p>Loading a few things I want you to see...</p>
+                    <p>Favorite person detected: <span class="yellow">SEVI</span></p>
+                    <p>Status: <span class="lavender">you are very appreciated.</span></p>
+                    <p><span class="prompt">guest@sevi:~$</span> <span class="blink">_</span></p>
+                </div>
+
+                <a href="#trust" class="main-button">Enter your little corner ♡</a>
+
+                <p class="small-note">
+                    No password needed. You're already allowed here.
+                </p>
+            </div>
+
+            <div class="hero-decoration">
+                <div class="moon">☾</div>
+                <span class="floating-star star-a">✦</span>
+                <span class="floating-star star-b">✧</span>
+
+                <div class="cat-art">
+                    /\_/\
+                    <br>
+                    ( o.o )
+                    <br>
+                    <span>approved by the cat department</span>
+                </div>
+
+                <div class="sticky-note">
+                    NOTE TO SEV:<br>
+                    Drink water.<br>
+                    Eat something.<br>
+                    Be happy. ♡
+                </div>
+
+                <p class="hero-caption">made with a little extra care</p>
+            </div>
+        </section>
+
+
+        <!-- SECTION 1: TRUST TESTER -->
+        <section class="content-section page-section" id="trust">
+            <div class="section-heading">
+                <div class="section-icon">⌘</div>
+                <div>
+                    <p class="section-number">SECURITY CHECK</p>
+                    <h2>The Trust Tester</h2>
+                    <p class="section-description">
+                        Let's see how well we know you, Sev.
+                    </p>
+                </div>
+            </div>
+
+            <div class="two-column">
+                <div class="panel scan-panel">
+                    <div class="panel-top">
+                        <span>SEVI_SCAN.exe</span>
+                        <span class="panel-close">● ● ●</span>
+                    </div>
+
+                    <div class="scan-screen">
+                        <p class="tiny-label">SYSTEM STATUS</p>
+                        <h3>Personal Compatibility Scan</h3>
+
+                        <div class="progress-track">
+                            <div class="progress-fill" id="scanProgress"></div>
+                        </div>
+
+                        <div class="scan-logs" id="scanLogs">
+                            <p>Waiting for scan...</p>
+                        </div>
+                    </div>
+
+                    <button class="button button-yellow full-button" id="startScan">
+                        Start scan ♡
+                    </button>
+                </div>
+
+                <div class="panel quiz-panel">
+                    <div class="panel-top">
+                        <span>QUICK KNOWLEDGE TEST</span>
+                        <span>03 QUESTIONS</span>
+                    </div>
+
+                    <div id="quizContainer">
+                        <h3 id="quizQuestion"></h3>
+                        <div class="quiz-options" id="quizOptions"></div>
+                        <button class="button full-button" id="quizSubmit">Submit answer ♡</button>
+                        <p class="feedback" id="quizFeedback"></p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="panel report-panel hidden" id="scanReport">
+                <div class="panel-top">
+                    <span>FINAL SCAN REPORT</span>
+                    <span class="yellow">COMPLETE ✓</span>
+                </div>
+
+                <h3>Results are in, bigboy.</h3>
+
+                <div class="report-grid">
+                    <div>
+                        <span>Cat compatibility</span>
+                        <strong class="good">APPROVED</strong>
+                    </div>
+                    <div>
+                        <span>Dog compatibility</span>
+                        <strong class="good">APPROVED</strong>
+                    </div>
+                    <div>
+                        <span>Jay's affection</span>
+                        <strong class="good">VERY HIGH</strong>
+                    </div>
+                    <div>
+                        <span>Biceps appreciation</span>
+                        <strong>UNDER REVIEW ♡</strong>
+                    </div>
+                </div>
+
+                <p class="report-ending">
+                    Final verdict: You are officially someone Ja is very happy to have around.
+                </p>
+            </div>
+
+            <!-- SONG DEDICATION -->
+            <div class="panel song-card">
+                <div class="song-intro">
+                    <p class="section-number">JUST FOR YOU</p>
+                    <h3>A song I want you to hear, Sev. ♡</h3>
+                    <p>Some things are easier to express through a song.</p>
+                </div>
+
+                <div class="song-content">
+                    <div class="song-player">
+                        <div class="song-cover">
+                            <span>CAS</span>
+                            <small>CIGARETTES<br>AFTER SEX</small>
+                        </div>
+
+                        <div class="song-details">
+                            <h4>Nothing's Gonna Hurt You Baby</h4>
+                            <p>Cigarettes After Sex</p>
+                            <a
+                                class="button button-yellow"
+                                href="https://youtu.be/QI8VrXkffcg?si=czjo4Icev7YjrLuo"
+                                target="_blank"
+                                rel="noopener noreferrer">
+                                Listen on YouTube ↗
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="song-message">
+                        <h4>Why this song?</h4>
+
+                        <p>
+                            I chose this song because, to me, it carries a simple message:
+                            I want you to feel safe, cared for, and at ease with me.
+                        </p>
+
+                        <p>
+                            I want you to know that you can be yourself around me.
+                            You don't have to pretend to be okay all the time.
+                            I want to be gentle with you, respect your feelings,
+                            and make the time we spend together feel peaceful.
+                        </p>
+
+                        <p>
+                            No pressure, no expectations. Just a little reminder
+                            that you deserve something gentle, too.
+                        </p>
+
+                        <p class="song-signature">With love, your Ja. ♡</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+        <!-- SECTION 2: FILIPINO KIT -->
+        <section class="content-section page-section" id="phrases">
+            <div class="section-heading">
+                <div class="section-icon">あ</div>
+                <div>
+                    <p class="section-number">LANGUAGE FILES</p>
+                    <h2>Filipino Survival Kit</h2>
+                    <p class="section-description">
+                        Everyday Filipino, expressions, and a few things you might hear from me.
+                    </p>
+                </div>
+            </div>
+
+            <div class="phrase-layout">
+                <div class="panel phrase-list">
+                    <div class="panel-top">
+                        <span>PHRASE DATABASE</span>
+                        <span id="phraseCount">18 PHRASES</span>
+                    </div>
+
+                    <div class="filter-buttons">
+                        <button class="filter-button active" data-filter="all">All</button>
+                        <button class="filter-button" data-filter="everyday">Everyday</button>
+                        <button class="filter-button" data-filter="slang">Slang</button>
+                        <button class="filter-button" data-filter="sweet">Sweet</button>
+                        <button class="filter-button" data-filter="family">Family</button>
+                    </div>
+
+                    <div id="phraseButtons"></div>
+                </div>
+
+                <div class="panel phrase-detail">
+                    <div class="panel-top">
+                        <span>PHRASE DETAILS</span>
+                        <span class="panel-close">♡</span>
+                    </div>
+
+                    <div id="phraseDetail"></div>
+                </div>
+            </div>
+        </section>
+
+
+        <!-- SECTION 3: CHALLENGE -->
+        <section class="content-section page-section" id="challenge">
+            <div class="section-heading">
+                <div class="section-icon">?</div>
+                <div>
+                    <p class="section-number">TEST YOUR KNOWLEDGE</p>
+                    <h2>Filipino Challenge</h2>
+                    <p class="section-description">
+                        Let's see what you've learned so far.
+                    </p>
+                </div>
+            </div>
+
+            <div class="panel challenge-panel">
+                <div class="challenge-top">
+                    <span id="questionCount">QUESTION 01 / 06</span>
+                    <span id="scoreDisplay">SCORE: 0</span>
+                </div>
+
+                <div class="challenge-progress">
+                    <div id="challengeProgress"></div>
+                </div>
+
+                <div id="challengeContent">
+                    <h3 id="challengeQuestion"></h3>
+                    <div class="challenge-options" id="challengeOptions"></div>
+                    <button class="button button-yellow full-button" id="checkChallenge">
+                        Check answer ♡
+                    </button>
+                    <p class="feedback" id="challengeFeedback"></p>
+                </div>
+
+                <div class="result-screen hidden" id="challengeResult">
+                    <div class="result-star">✦</div>
+                    <h3 id="resultTitle">Well done!</h3>
+                    <p id="resultText"></p>
+                    <button class="button button-yellow" id="restartChallenge">
+                        Try again
+                    </button>
+                </div>
+            </div>
+        </section>
+
+
+        <!-- SECTION 4: MESSAGE GENERATOR -->
+        <section class="content-section page-section" id="messages">
+            <div class="section-heading">
+                <div class="section-icon">♡</div>
+                <div>
+                    <p class="section-number">MESSAGE GENERATOR</p>
+                    <h2>What Should I Say?</h2>
+                    <p class="section-description">
+                        A few things your Ja might say to you.
+                    </p>
+                </div>
+            </div>
+
+            <div class="panel message-generator">
+                <div class="message-generator-left">
+                    <div class="big-heart">♡</div>
+                    <p class="section-number">INCOMING MESSAGE</p>
+                    <h3>A little note for Sev.</h3>
+                    <p>
+                        Press the button. You might get a compliment,
+                        a reminder, or a little bit of affection.
+                    </p>
+
+                    <button class="button button-yellow" id="generateMessage">
+                        Generate message ✦
+                    </button>
+                </div>
+
+                <div class="generated-message">
+                    <div class="panel-top">
+                        <span>FROM: MAHAL JA</span>
+                        <span>TO: SEV</span>
+                    </div>
+
+                    <div id="messageOutput">
+                        <p class="message-placeholder">
+                            Your message will appear here...
+                        </p>
+                    </div>
+
+                    <button class="button copy-button" id="copyMessage">
+                        Copy message
+                    </button>
+
+                    <span class="copy-feedback" id="copyFeedback"></span>
+                </div>
+            </div>
+        </section>
+
+
+        <!-- SECTION 5: UNDERSTANDING JA -->
+        <section class="content-section page-section" id="jay">
+            <div class="section-heading">
+                <div class="section-icon">✿</div>
+                <div>
+                    <p class="section-number">PERSONAL FILE</p>
+                    <h2>Understanding Ja</h2>
+                    <p class="section-description">
+                        A tiny guide to the girl behind this website.
+                    </p>
+                </div>
+            </div>
+
+            <div class="jay-grid">
+                <div class="panel jay-profile">
+                    <div class="profile-icon">J</div>
+                    <p class="section-number">USER PROFILE</p>
+                    <h3>Ja</h3>
+                    <p class="profile-description">
+                        Also known as Mahal Ja, depending on who's calling.
+                    </p>
+
+                    <div class="profile-tags">
+                        <span>Yellow lover</span>
+                        <span>Soft-hearted</span>
+                        <span>Quietly affectionate</span>
+                        <span>IT student</span>
+                    </div>
+                </div>
+
+                <div class="panel jay-guide">
+                    <div class="panel-top">
+                        <span>HOW TO UNDERSTAND JA</span>
+                        <span>5 NOTES</span>
+                    </div>
+
+                    <div class="guide-item">
+                        <span>01</span>
+                        <div>
+                            <strong>I might be quiet sometimes.</strong>
+                            <p>
+                                That doesn't mean I don't care. Sometimes I just
+                                don't know how to put everything into words.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="guide-item">
+                        <span>02</span>
+                        <div>
+                            <strong>I remember little things.</strong>
+                            <p>
+                                The small details you tell me matter.
+                                I like remembering things about you.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="guide-item">
+                        <span>03</span>
+                        <div>
+                            <strong>I show affection in simple ways.</strong>
+                            <p>
+                                Sometimes it's a random message, a compliment,
+                                or asking how your day went.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="guide-item">
+                        <span>04</span>
+                        <div>
+                            <strong>If I ask "Kumain ka na ba?"...</strong>
+                            <p>
+                                It's not always just about food. Asking if you've
+                                eaten is one of my little ways of saying I care
+                                about you. It's my way of saying "I like you"
+                                or even "I love you."
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="guide-item">
+                        <span>05</span>
+                        <div>
+                            <strong>I appreciate your time.</strong>
+                            <p>
+                                Even a short conversation with you can make
+                                my day a little better.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="panel random-joke-panel">
+                <div>
+                    <p class="section-number">A RANDOM THOUGHT FROM JA</p>
+                    <h3 id="randomJoke">
+                        I hope you know you're appreciated, Sev. ♡
+                    </h3>
+                </div>
+
+                <button class="button" id="newJoke">
+                    Another one ↻
+                </button>
+            </div>
+        </section>
+
+
+        <!-- SECTION 6: SLEEP DETECTOR -->
+        <section class="content-section page-section" id="sleep">
+            <div class="section-heading">
+                <div class="section-icon">☾</div>
+                <div>
+                    <p class="section-number">STATUS CHECK</p>
+                    <h2>Sev's Sleep Detector</h2>
+                    <p class="section-description">
+                        Because "I'm sick, I'm tired, I fell asleep" deserves its own system.
+                    </p>
+                </div>
+            </div>
+
+            <div class="sleep-layout">
+                <div class="panel sleep-display">
+                    <div class="sleep-moon">☾</div>
+                    <p class="section-number">CURRENT SEVI STATUS</p>
+                    <h3 id="sleepStatus">Waiting for status...</h3>
+                    <p id="sleepDescription">
+                        Press the button to find out what Sev might be doing right now.
+                    </p>
+
+                    <button class="button button-yellow" id="detectSleep">
+                        Detect Sev's status
+                    </button>
+                </div>
+
+                <div class="panel sleep-stats">
+                    <div class="panel-top">
+                        <span>OBSERVATION LOG</span>
+                        <span>SEV.exe</span>
+                    </div>
+
+                    <div class="sleep-stat">
+                        <span>Most common status</span>
+                        <strong>TIRED</strong>
+                    </div>
+
+                    <div class="sleep-stat">
+                        <span>Possible next activity</span>
+                        <strong>SLEEPING</strong>
+                    </div>
+
+                    <div class="sleep-stat">
+                        <span>Recommended action</span>
+                        <strong>REST + FOOD</strong>
+                    </div>
+
+                    <div class="sleep-stat">
+                        <span>Ja's reminder</span>
+                        <strong>TAKE CARE ♡</strong>
+                    </div>
+
+                    <p class="sleep-footnote">
+                        This detector is not scientifically accurate.
+                        It is based on observations and affection.
+                    </p>
+                </div>
+            </div>
+
+            <!-- APPRECIATION MESSAGE -->
+            <div class="panel appreciation-card">
+                <p class="section-number">A MESSAGE FOR MY BIGBOY ♡</p>
+
+                <h3>To my Sev,</h3>
+
+                <p>
+                    I know you've been working really hard, and I hope you know
+                    how much I appreciate you. Even with your busy days and
+                    everything you have to do, you still find a little time
+                    for me.
+                </p>
+
+                <p>
+                    It might only be for a moment sometimes, but those moments
+                    mean a lot to me. Thank you for making time for me, for
+                    letting me be part of your day, and for making me feel
+                    remembered even when life gets busy.
+                </p>
+
+                <p>
+                    I hope you remember to take care of yourself, too.
+                    You deserve rest, good food, and time for yourself.
+                    I'm proud of you, bigboy.
+                </p>
+
+                <p>
+                    And yes, I still want to see those biceps. ♡
+                </p>
+
+                <div class="appreciation-signature">
+                    With love, your Ja. ♡
+                </div>
+            </div>
+
+            <div class="final-note">
+                <span>♡</span>
+                <p>
+                    That's all for now, Sev.<br>
+                    I'm glad I get to know you.
+                </p>
+                <small>END OF PERSONAL FILE</small>
+            </div>
+        </section>
+
+    </main>
+
+    <footer>
+        <p>For<span>.</span>Sev — made with care by Ja ♡</p>
+        <p class="footer-small">For my bigboy, Sev. Always take care.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
